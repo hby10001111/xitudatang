@@ -1,7 +1,5 @@
-# xitudatang
-hebiye
-document
-  prefix ex <http://example.com/>
+# document
+##  prefix ex <http://example.com/>
   prefix wd <http://www.wikidata.org/entity/>
   prefix wdt <http://www.wikidata.org/prop/direct/>
   prefix rdfs <http://www.w3.org/2000/01/rdf-schema#>
