@@ -1,0 +1,13 @@
+from rdflib import Graph
+import rdflib
+g = rdflib.Graph()
+g.parse("di100.ttl",format="ttl")
+qres = g.query(
+    """SELECT   ?a  ?d
+       WHERE {
+          ?a scheme:description ?b .
+          ?a prov:wasAttributedTo ?c .
+          ?a prov:wasGeneratedBy ?d.
+       }order by desc (?a)  """)
+for row in qres:
+    print("%s prov:wasGeneratedBy %s" % row)
