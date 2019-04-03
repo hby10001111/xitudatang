@@ -7,7 +7,7 @@ import rdflib
 
 g = rdflib.Graph()
 
-g.parse("di1030.ttl",format="ttl")
+g.parse("di2030.ttl",format="ttl")
 
 qres = g.query(
   
